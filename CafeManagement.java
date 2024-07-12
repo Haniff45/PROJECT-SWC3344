@@ -220,7 +220,7 @@ public class CafeManagement extends JFrame {
         if (!queue.isEmpty()) {
             String customer = queue.poll(); // Get next customer from queue
             // Process the payment for the customer
-            receipts.append("Processed payment for ").append(customer.split(",")[1]).append(" at ").append(counterName).append("\n");
+            receipts.append("Get receipt for ").append(customer.split(",")[1]).append(" at ").append(counterName).append("\n");
             JOptionPane.showMessageDialog(this, "Processed payment for " + customer.split(",")[1] + " at " + counterName);
         } else {
             JOptionPane.showMessageDialog(this, counterName + " is empty."); // Show message if counter is empty
